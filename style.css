@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.header {
+  height: 23vh;
+  width: 100%;
+  background: #FFFFFF99;
+  box-shadow: 0px 4px 16px 0px #0000000A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.search {
+  height: 35px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: 0.5px solid #6060604D;
+  border-radius: 6px;
+  background: url(./assets/icons/search-icon.png) no-repeat 7px;
+  background-size: 16px;
+  padding-left: 30px;
+  outline: none;
+  margin-right: 10%;
+  margin-left: 30px;
+}
+
+.enable-search-field {
+  display: none;
+}
+
+.header img {
+  height: 15vh;
+  width: 15vh;
+  margin-left: 10%;
+}
+
+.cards-container img {
+  width: 150px;
+  height: 150px;
+}
+
+.simple-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px 0px #0000000A;
+  padding: 24px;
+}
+
+.full-card {
+  grid-area: full-card;
+  width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px 0px #0000000A;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.full-card img {
+  width: 250px;
+  height: 250px;
+  align-self: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-container {
+    margin-top: 23vh;
+    padding: 50px 30px 50px 30px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "card1 card2 card4 card5"
+      "card1 card3 card4 card6";
+    row-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .cards-container {
+    margin-top: 23vh;
+    padding: 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "card1 card2"
+      "card1 card3"
+      "card4 card6"
+      "card4 card5";
+    row-gap: 30px;
+    column-gap: 5vw;
+  }
+}
+
+#card1 {
+  grid-area: card1;
+}
+
+#card2 {
+  grid-area: card2;
+}
+
+#card3 {
+  grid-area: card3;
+}
+
+#card4 {
+  grid-area: card4;
+}
+
+#card5 {
+  grid-area: card5;
+}
+
+#card6 {
+  grid-area: card6;
+}
+
+.price-tag {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  background: #F9C7BF80;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.titles {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer {
+  height: 23vh;
+  background: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 90px;
+  padding-left: 90px;
+  position: relative;
+}
+
+.footer img{
+  height: 65px;
+  width: 65px;
+}
+
+#footer-logo {
+  position: absolute;
+  margin-left:auto; 
+  margin-right:auto;
+  left: 0;
+  right: 0;
+}
+
+#social-media-icons img{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+
+.footer a {
+  color: black;
+  text-decoration:none;
+  font-weight: bold;
+}
